@@ -3,9 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="icons/ship.png">
     <title>Battleship game</title>
 </head>
 <body>
+    <header>
+        <h1>BATTLESHIP</h1>
+    </header>
     <main>
         <dialog id="start-game">
             <section>
@@ -20,8 +24,14 @@
                 <button id="new-game">New game</button>
             </section>
         </dialog>
-        <section class="gameboard" id="player"></section>
-        <section class="gameboard" id="computer"></section>
+        <section>
+            <h2>Player board</h2>
+            <section class="gameboard" id="player"></section>
+        </section>
+        <section>
+            <h2>Computer board</h2>            
+            <section class="gameboard" id="computer"></section>
+        </section>
     </main>
 </body>
 </html>
