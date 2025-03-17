@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="icons/ship.png">
+    <title>Battleship game</title>
+<script defer src="runtime.js"></script><script defer src="main.js"></script></head>
+<body>
+    <header>
+        <h1>BATTLESHIP</h1>
+    </header>
+    <main>
+        <dialog id="start-game">
+            <section>
+                <h2>Welcome to Battleship game</h2>
+                <button id="rotate-btn">Rotate</button>
+                <section class="gameboard" id="choice-board"></section>
+            </section>
+        </dialog>
+        <dialog id="end-game">
+            <section>
+                <span id="winner"></span>
+                <button id="new-game">New game</button>
+            </section>
+        </dialog>
+        <section>
+            <h2>Player board</h2>
+            <section class="gameboard" id="player"></section>
+        </section>
+        <section>
+            <h2>Computer board</h2>            
+            <section class="gameboard" id="computer"></section>
+        </section>
+    </main>
+</body>
+</html>
