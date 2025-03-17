@@ -1,0 +1,156 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap');
+
+*
+{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+body
+{
+    background-color: black;
+}
+
+main
+{
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    height: 90vh;
+    gap: 12vw;
+}
+
+.gameboard
+{
+    display: grid;
+    grid-template-columns: repeat(10,40px);
+    border: 1px solid white;
+}
+
+.cell
+{
+    width: 40px;
+    height: 40px;
+    border: 2px white solid;
+}
+
+.ship
+{
+    background-color: gray;
+}
+
+
+.enemy
+{
+    background-color: black;
+}
+
+.enemy:hover
+{
+    background-color: gray;
+    opacity: .6;
+}
+
+.attacked
+{
+    background-color: red;
+}
+
+.fail
+{
+    background-color: rgb(255, 255, 255);
+}
+
+.fail,.attacked
+{
+    pointer-events: none;
+}
+
+#end-game, #start-game
+{
+    position: fixed;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    width: 300px;
+    padding: 2vh 2vw;
+    border-radius: 1rem;
+    border: none;
+    box-shadow: 0 0 1em black;
+}
+
+#end-game > section, #start-game > section
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+
+dialog::backdrop 
+{
+    background-color: rgba(0, 0, 0, 0.6);
+}
+
+#new-game, #rotate-btn
+{
+    border: none;
+    border-radius: 5px;
+    background-color: black;
+    color: white;
+    height: 5vh;
+    width: 10vw;
+    align-self: center;
+    font-weight: bold;
+    font-size: 1rem;
+}
+
+#rotate-btn
+{
+    width: 100px;
+    font-size: 1.4rem;
+    background-color: white;
+    color: black;
+    border: none;
+}
+
+#rotate-btn:hover
+{
+    background-color: gray;
+    color: white;
+}
+
+#new-game:hover
+{
+    background-color: rgb(71, 71, 71);
+}
+
+#winner
+{
+    text-align: center;
+    font-size: 1.4rem;
+    font-weight: bold;
+}
+
+#start-game
+{
+    color: white;
+    background-color: black;
+    padding: 30px;
+    width: 500px;
+}
+
+#start-game > section
+{
+    gap: 25px;
+}
+
+.preselected
+{
+    background-color: white;
+}
